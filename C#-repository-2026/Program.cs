@@ -10,6 +10,7 @@ namespace C__repository_2026
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
