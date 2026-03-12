@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace C__repository_2026.Entities
 {
-    public class Image
+    public class Character
     {
         public int Id { get; set; }
-        public string FileName { get; set; }
-        public string FilePath { get; set; }
-        public DateTime UploadDate { get; set; }
-        public string FileSize { get; set; }
+        public string CharacterName { get; set; }
+        public string Description { get; set; }
+        public DateTime CreatedDate { get; set; }
 
-        // Foreign Key
+        // Relationship
         public virtual ICollection<DetectedCharacter> DetectedCharacters { get; set; }
-
-       
     }
 }
