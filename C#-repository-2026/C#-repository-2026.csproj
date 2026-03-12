@@ -48,11 +48,13 @@
     <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\Image.cs" />
     <Compile Include="Interfaces\IContex.cs" />
-    <Compile Include="Interfaces\Irepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CharacterRepository.cs" />
+    <Compile Include="Repositories\DetectedCharacterRepository.cs" />
     <Compile Include="Repositories\GalleryRepository.cs" />
+    <Compile Include="Repositories\ImageRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
