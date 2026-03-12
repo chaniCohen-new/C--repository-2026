@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C__repository_2026
+namespace C__repository_2026.Entities
 {
-    internal class Program
+    internal class DetectedCharacter
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
