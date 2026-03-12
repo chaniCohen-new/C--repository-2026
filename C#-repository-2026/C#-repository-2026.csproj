@@ -46,14 +46,13 @@
     <Compile Include="Entities\Character.cs" />
     <Compile Include="Entities\DetectedCharacter.cs" />
     <Compile Include="Entities\Image.cs" />
+    <Compile Include="Interfaces\Irepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
