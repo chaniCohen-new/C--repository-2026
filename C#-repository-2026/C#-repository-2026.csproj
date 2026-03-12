@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Entities\Character.cs" />
     <Compile Include="Entities\DetectedCharacter.cs" />
+    <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\Image.cs" />
     <Compile Include="Interfaces\Irepository.cs" />
     <Compile Include="Program.cs" />
