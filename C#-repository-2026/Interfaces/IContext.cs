@@ -1,12 +1,16 @@
-﻿using System;
+﻿using C__repository_2026.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace C__repository_2026.Interfaces
+namespace DataAccessLayer.Interfaces
 {
-    internal class IContext
+    public interface IContext
     {
+        DbSet<Character> Characters { get; set; }
+        DbSet<Image> Images { get; set; }
+        DbSet<DetectedCharacter> DetectedCharacters { get; set; }
+
+        Task<int> SaveChangesAsync(); // שמירה א-סינכרונית
     }
 }
