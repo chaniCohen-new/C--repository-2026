@@ -48,6 +48,7 @@
     <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\Image.cs" />
     <Compile Include="Interfaces\IContex.cs" />
+    <Compile Include="Interfaces\IContext.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

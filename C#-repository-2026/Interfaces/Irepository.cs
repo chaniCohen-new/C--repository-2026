@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        public List<T> GetAll();
-        public T Get(int id);
-        public T AddItem(T item);
-        public void DeleteItem(int id);
-        public void UpdateItem(int id, T item);
+        Task<List<T>> GetAllAsync();
+        Task<T> GetAsync(int id);
+        Task<T> AddItemAsync(T item);
+        Task DeleteItemAsync(int id);
+        Task UpdateItemAsync(int id, T item);
     }
 }
