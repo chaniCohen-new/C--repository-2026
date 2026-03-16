@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace C__repository_2026.Entities
 {
     public class Gallery
     {
         public int Id { get; set; }
-        public string Name { get; set; }           // שם האוסף (למשל: "Brad Pitt")
+        public string Name { get; set; }           // שם האוסף (למשל: "דמות מסוימת")
         public int CharacterId { get; set; }       // איזו דמות זה
         public Character Character { get; set; }   // הקשר ל-Character
         public List<Image> Images { get; set; }    // כל התמונות באוסף הזה
