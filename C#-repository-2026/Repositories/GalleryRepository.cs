@@ -22,7 +22,7 @@ namespace C__repository_2026.Repositories
         {
             item.CreatedDate = DateTime.Now;
             context.Galleries.Add(item);
-            context.Save();
+            context.SaveChanges();
             return item;
         }
 
@@ -32,7 +32,7 @@ namespace C__repository_2026.Repositories
             if (gallery != null)
             {
                 context.Galleries.Remove(gallery);
-                context.Save();
+                context.SaveChanges();
             }
         }
 
@@ -58,7 +58,7 @@ namespace C__repository_2026.Repositories
                 gallery.Name = item.Name;
                 gallery.CharacterId = item.CharacterId;
                 context.Galleries.Update(gallery);
-                context.Save();
+                context.SaveChanges();
             }
         }
 

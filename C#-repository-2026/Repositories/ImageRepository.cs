@@ -21,7 +21,7 @@ namespace C__repository_2026.Repositories
         public Image AddItem(Image item)
         {
             context.Images.Add(item);
-            context.Save();
+            context.SaveChanges();
             return item;
         }
 
@@ -31,7 +31,7 @@ namespace C__repository_2026.Repositories
             if (image != null)
             {
                 context.Images.Remove(image);
-                context.Save();
+                context.SaveChanges();
             }
         }
 
@@ -55,7 +55,7 @@ namespace C__repository_2026.Repositories
                 image.Url = item.Url;
                 image.GalleryId = item.GalleryId;
                 context.Images.Update(image);
-                context.Save();
+                context.SaveChanges();
             }
         }
 

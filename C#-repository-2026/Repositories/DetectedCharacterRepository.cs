@@ -22,7 +22,7 @@ namespace C__repository_2026.Repositories
         {
             item.DetectionDate = DateTime.Now;
             context.DetectedCharacters.Add(item);
-            context.Save();
+            context.SaveChanges();
             return item;
         }
 
@@ -32,7 +32,7 @@ namespace C__repository_2026.Repositories
             if (detection != null)
             {
                 context.DetectedCharacters.Remove(detection);
-                context.Save();
+                context.SaveChanges();
             }
         }
 
@@ -57,7 +57,7 @@ namespace C__repository_2026.Repositories
             {
                 detection.Confidence = item.Confidence;
                 context.DetectedCharacters.Update(detection);
-                context.Save();
+                context.SaveChanges();
             }
         }
 

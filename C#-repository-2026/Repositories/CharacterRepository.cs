@@ -53,7 +53,7 @@ namespace C__repository_2026.Repositories
                 character.CharacterName = item.CharacterName;
                 character.Description = item.Description;
                 context.Characters.Update(character);
-                context.Save();
+                context.SaveChanges();
             }
         }
     }
