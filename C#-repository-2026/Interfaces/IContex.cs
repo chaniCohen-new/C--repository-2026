@@ -10,11 +10,10 @@ namespace C__repository_2026.Interfaces
 {
     public interface IContext
     {
-        public DbSet<Gallery> Galleries { get; set; }
-        public DbSet<Image> Images { get; set; }
-        public DbSet<Character> Characters { get; set; }
-        public DbSet<DetectedCharacter> DetectedCharacters { get; set; }
-
+        DbSet<Gallery> Galleries { get; set; }
+        DbSet<Image> Images { get; set; }
+        DbSet<Character> Characters { get; set; }
+        DbSet<DetectedCharacter> DetectedCharacters { get; set; }
         public void Save();
     }
 }
